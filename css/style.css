@@ -139,3 +139,12 @@ header, main{
 .newsletter input[type="email"] {
   padding: 8px;
 }
+
+
+
+#products-container{
+  background-color: red;
+}
+.product-data{
+  display: flex;
+}

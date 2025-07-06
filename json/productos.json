@@ -1,0 +1,16 @@
+{
+    "producto1": {
+        "nombre": "Camisetas",
+        "subnombre": "Simplicidad que resalta. Básicas que nunca pasan desapercibidas",
+        "descripcion": "Ideales para quienes prefieren lo sencillo, pero bien hecho. Suaves, cómodas y fáciles de combinar, estas camisetas son ese básico que siempre funciona. Perfectas para el día a día, para un look relajado o como base para crear algo con tu propio estilo.",
+        "precio": "40€",
+        "imagen": "C:\\Users\\Álvaro\\Desktop\\Workspace\\Geek22\\img\\IMG_9730.JPG"
+    },
+    "producto2": {
+        "nombre": "Sudaderas",
+        "subnombre": "Sudaderas cómodas y con estilo que te acompañan siempre.",
+        "descripcion": "Con diseños pensados para ofrecer calidez y un ajuste perfecto, nuestras sudaderas son ideales para esos días en los que quieres sentirte cómodo sin perder el toque moderno. Una prenda versátil que combina con todo y se adapta a tu ritmo.",
+        "precio": "60€",
+        "imagen": "C:\\Users\\Álvaro\\Desktop\\Workspace\\Geek22\\img\\IMG_9740.JPG"
+    }
+}

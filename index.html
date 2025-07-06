@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon_io/favicon-32x32.png" type="image/x-icon">
     <title>Geek22</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,148 +12,163 @@
 
 <body>
     <nav class="menu">
-            <figure>
-                <img src="imagenes empresa/logo 2.png" class="logo" alt="logo">
-            </figure>
-            <a href="#inicio">Inicio</a>
-            <a href="#nuestros-productos">Nuestros Productos</a>
-            <a href="#sobre-nosotros">Sobre Nosotros</a>
-            <a href="/carrito.html" class="carrito">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
+        <figure>
+            <img src="img/logo 2.png" class="logo" alt="logo">
+        </figure>
+        <a href="#inicio">Inicio</a>
+        <a href="#nuestros-productos">Nuestros Productos</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="/carrito.html" class="carrito">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
     </nav>
     <header>
-       <div class="flex"> 
-        <div class="container-item">
-            <figure>
-                <img src="imagenes empresa/Banner Horizontal Moda Moderno Blanco y Beige.png" class="banner" alt="banner">
-            </figure>
+        <div class="flex">
+            <div class="container-item">
+                <figure>
+                    <img src="img/Banner Horizontal Moda Moderno Blanco y Beige.png" class="banner" alt="banner">
+                </figure>
+            </div>
         </div>
-       </div>
-        <div class="container"> 
+        <div class="container">
         </div>
     </header>
     <main>
         <section id="hero">
-                <h1>Donde nace el buen gusto</h1>
-                <p>Porque tu estilo no se copia, se crea. Prendas para personas reales que no siguen tendencias,las inspiran.</p>
-                <div class="buttons">
-                    <button>COMPRA YA</button>
-                    <button>VER NUEVA COLECCION</button>
-                </div>
-            </section>
-            <section id="inicio">
-                <div class="container">
-                </div>
-                <div class="img-container">
-                    <h1>Inicio</h1>
-                    <p>Una marca creada para quienes usan la ropa como una forma de expresarse. Creemos en la autenticidad, la calidad y el estilo sin reglas.</p>
-                    <h3>Solo por tiempo limitado</h3>
-                    <P>Aprovecha nuestras ofertas exclusivas:</P>
-                    <P>🎁 Envío gratis en compras desde 50€</P>
-                    <P>🎫 10% de descuento con el código: GEEK10</P>
-                    <section class="newsletter" id="newsletter">
-                        <h2>Suscribete a nuestra newsletter</h2>
-                        <P>¿Primera vez por aquí? Suscríbete y recibe un 5% de descuento en tu primera compra.</P>
-                        
-                        <form action="#" method="post">
-                            <input type="email" name="email" id="email">
-                            <button type="submit">SUSCRIBETE💌</button>
-                        </form>
-                    </section>
-                </div>
-            </section>
+            <h1>Donde nace el buen gusto</h1>
+            <p>Porque tu estilo no se copia, se crea. Prendas para personas reales que no siguen tendencias,las
+                inspiran.</p>
+            <div class="buttons">
+                <button>COMPRA YA</button>
+                <button>VER NUEVA COLECCION</button>
+            </div>
+        </section>
+        <section id="inicio">
             <div class="container">
+            </div>
+            <div class="img-container">
+                <h1>Inicio</h1>
+                <p>Una marca creada para quienes usan la ropa como una forma de expresarse. Creemos en la autenticidad,
+                    la calidad y el estilo sin reglas.</p>
+                <h3>Solo por tiempo limitado</h3>
+                <P>Aprovecha nuestras ofertas exclusivas:</P>
+                <P>🎁 Envío gratis en compras desde 50€</P>
+                <P>🎫 10% de descuento con el código: GEEK10</P>
+                <section class="newsletter" id="newsletter">
+                    <h2>Suscribete a nuestra newsletter</h2>
+                    <P>¿Primera vez por aquí? Suscríbete y recibe un 5% de descuento en tu primera compra.</P>
+
+                    <form action="#" method="post">
+                        <input type="email" name="email" id="email">
+                        <button type="submit">SUSCRIBETE💌</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+        <div class="container">
 
             <h1 class="nuestros-productos">Nuestros Productos</h1>
-            <div class="row">
-        <div class="col-xs-12">
-        <form>
-            <input class="search-input" type="search" name="search" placeholder="Busca el articulo">
-        </form>
+            <div id="products-container"></div>
+<!--            <div class="row">
+                <div class="col-xs-12">
+                    <form>
+                        <input class="search-input" type="search" name="search" placeholder="Busca el articulo">
+                    </form>
 
-        <select class="select-order">
-        <option>Precio mas bajo</option>
-        <option>Precio mas alto</option>
-        <option>Mas vendidos</option>
-        </select>
+                    <select class="select-order">
+                        <option>Precio mas bajo</option>
+                        <option>Precio mas alto</option>
+                        <option>Mas vendidos</option>
+                    </select>
 
+                </div>
+                <section id="nuestros-productos">
+                    <div class="row">
+                        <a href="#" class="col-m-4 col-s-6 product-box">
+                            <img src="img/IMG_9738.JPG" alt="camisetas" width="250x">
+                        </a>
+                        <div class="info-product">
+                            <h2>Camisetas</h2>
+                            <h3>Simplicidad que resalta. Básicas que nunca pasan desapercibidas</h3>
+                            <p>Ideales para quienes prefieren lo sencillo, pero bien hecho. Suaves, cómodas y fáciles de
+                                combinar, estas camisetas son ese básico que siempre funciona. Perfectas para el día a
+                                día, para un look relajado o como base para crear algo con tu propio estilo.</p>
+                            <p class="price">40€</p>
+                        </div>
+                    </div>
+                    <button>+ Info</button>
             </div>
-            <section id="nuestros-productos">
-                <div class="row">
-                    <a href="#"class="col-m-4 col-s-6 product-box">
-                        <img src="imagenes empresa/IMG_9738.JPG" alt="camisetas" width="250x">
-                    </a>
-                    <div class="info-product">
-                        <h2>Camisetas</h2>
-                        <h3>Simplicidad que resalta. Básicas que nunca pasan desapercibidas</h3>
-                        <p>Ideales para quienes prefieren lo sencillo, pero bien hecho. Suaves, cómodas y fáciles de combinar, estas camisetas son ese básico que siempre funciona. Perfectas para el día a día, para un look relajado o como base para crear algo con tu propio estilo.</p>
-                        <p class="price">40€</p>
-                    </div>
-                </div>
-                    <button>+ Info</button>
-                </div>
-                <div class="row">
-                    <div class="container-item">
-                        <div class="item">
-                            <figure>
-                                <img src="imagenes empresa/IMG_9730.JPG" alt="sudaderas">
-                            </figure>
-                            <div class="info-product">
-                    <h2>Sudaderas</h2>
-                    <h3>Sudaderas cómodas y con estilo que te acompañan siempre.</h3>
-                    <p>Con diseños pensados para ofrecer calidez y un ajuste perfecto, nuestras sudaderas son ideales para esos días en los que quieres sentirte cómodo sin perder el toque moderno. Una prenda versátil que combina con todo y se adapta a tu ritmo.</p>
-                    <p class="price">60€</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button>+ Info</button>
-                </div>
-                <div class="carta">
-                    <div class="container items">
-                        <div class="item">
-                            <figure>
-                                <img src="imagenes empresa/IMG_9740.JPG" alt="gorras">
-                            </figure>
-                            <div class="info-product">
-                        <h3>Gorras</h3>
-                    <h3>Gorras prácticas y con personalidad para completar tu look</h3>
-                    <P>Perfectas para darle el toque final a cualquier outfit, nuestras gorras combinan funcionalidad con estilo. Ya sea para protegerte del sol o simplemente para marcar presencia, son el complemento que no puede faltar en tu armario.</P>
-                    <p class="price">30€</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                </div>
-            </section>
-            <h1>Sobre Nosotros</h1>
-            <section id="sobre-nosotros">
+            <div class="row">
                 <div class="container-item">
-                    <figure>
-                        <img src="imagenes empresa/White and Black Minimalist Fashion Clothing Label.png" alt="infoempresa" id="tarjeta">
-                    </figure>
+                    <div class="item">
+                        <figure>
+                            <img src="img/IMG_9730.JPG" alt="sudaderas">
+                        </figure>
+                        <div class="info-product">
+                            <h2>Sudaderas</h2>
+                            <h3>Sudaderas cómodas y con estilo que te acompañan siempre.</h3>
+                            <p>Con diseños pensados para ofrecer calidez y un ajuste perfecto, nuestras sudaderas son
+                                ideales para esos días en los que quieres sentirte cómodo sin perder el toque moderno.
+                                Una prenda versátil que combina con todo y se adapta a tu ritmo.</p>
+                            <p class="price">60€</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="container">
-                        <ul>
-                    <li>🧵 Historia de la marca</li>
-                    <p>Nacimos con una idea clara: que vestirse bien no tiene por qué ser complicado ni costoso. Nuestra tienda empezó con solo una idea y un sueño: ayudar a la gente a expresar quién es a través de la ropa.</p>
-                    <li>🎯 Misión y visión</li>
-                    <p>Nuestra misión es ofrecer ropa con estilo, accesible y de calidad, para que cada persona pueda sentirse auténtica, cómoda y segura. Queremos ser más que una tienda: una comunidad que viste con propósito.</p>
-                    <li>✨ Valores de la marca</li>
-                    <p>Creemos en la moda sin etiquetas, en la producción ética y en destacar la individualidad. Apostamos por proveedores responsables y colecciones limitadas para evitar el desperdicio</p>
-                    <li>🤝 Compromiso con el cliente</li>
-                    <p>Nos importa que te sientas bien antes, durante y después de comprar. Estamos aquí para ayudarte, asesorarte y ofrecerte una experiencia fácil y confiable.</p>
-                </ul>
+                <button>+ Info</button>
+            </div>
+            <div class="carta">
+                <div class="container items">
+                    <div class="item">
+                        <figure>
+                            <img src="img/IMG_9740.JPG" alt="gorras">
+                        </figure>
+                        <div class="info-product">
+                            <h3>Gorras</h3>
+                            <h3>Gorras prácticas y con personalidad para completar tu look</h3>
+                            <P>Perfectas para darle el toque final a cualquier outfit, nuestras gorras combinan
+                                funcionalidad con estilo. Ya sea para protegerte del sol o simplemente para marcar
+                                presencia, son el complemento que no puede faltar en tu armario.</P>
+                            <p class="price">30€</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section id="compra-ya">
-                <h2>Porque la moda no es lo que llevas, es cómo lo llevas</h2>
-            <a href="#inicio"><button>VOLVER AL INICIO</button></a> 
 
-            </section>
+            </div>-->
+        </div>
+        </section>
+        <h1>Sobre Nosotros</h1>
+        <section id="sobre-nosotros">
+            <div class="container-item">
+                <figure>
+                    <img src="img/White and Black Minimalist Fashion Clothing Label.png" alt="infoempresa" id="tarjeta">
+                </figure>
+            </div>
+            <div class="container">
+                <ul>
+                    <li>🧵 Historia de la marca</li>
+                    <p>Nacimos con una idea clara: que vestirse bien no tiene por qué ser complicado ni costoso. Nuestra
+                        tienda empezó con solo una idea y un sueño: ayudar a la gente a expresar quién es a través de la
+                        ropa.</p>
+                    <li>🎯 Misión y visión</li>
+                    <p>Nuestra misión es ofrecer ropa con estilo, accesible y de calidad, para que cada persona pueda
+                        sentirse auténtica, cómoda y segura. Queremos ser más que una tienda: una comunidad que viste
+                        con propósito.</p>
+                    <li>✨ Valores de la marca</li>
+                    <p>Creemos en la moda sin etiquetas, en la producción ética y en destacar la individualidad.
+                        Apostamos por proveedores responsables y colecciones limitadas para evitar el desperdicio</p>
+                    <li>🤝 Compromiso con el cliente</li>
+                    <p>Nos importa que te sientas bien antes, durante y después de comprar. Estamos aquí para ayudarte,
+                        asesorarte y ofrecerte una experiencia fácil y confiable.</p>
+                </ul>
+            </div>
+        </section>
+        <section id="compra-ya">
+            <h2>Porque la moda no es lo que llevas, es cómo lo llevas</h2>
+            <a href="#inicio"><button>VOLVER AL INICIO</button></a>
+
+        </section>
     </main>
-    
+
     <div class="contenedor-productos">
 
     </div>
@@ -160,5 +177,7 @@
             <p>&copy; Geek22 2023</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
