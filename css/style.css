@@ -141,10 +141,30 @@ header, main{
 }
 
 
-
-#products-container{
-  background-color: red;
-}
-.product-data{
+.contenedor-nuestros-productos{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#products-container{
+  /* background-color: red; */
+  width: 60%;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.producto{
+  display: flex;
+  align-items: center;
+  background-color: #778469;
+  border: 3px solid #000000;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.producto img{
+  width: 200px;
+  margin-right: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
 }
