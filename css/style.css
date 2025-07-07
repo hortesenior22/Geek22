@@ -1,13 +1,19 @@
-
+/*Cargar Fuentes*/
 @font-face {
   font-family: 'tropika';
-  src: url('fonts/tropika-island-int.otf') format('truetype');
+  src: url('../fonts/tropika-island-int.otf') format('truetype');
 }
 
 @font-face {
   font-family: 'bricolage';
-  src: url('fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf') format('truetype');
+  src: url('../fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf') format('truetype');
 }
+
+/*Variables*/
+:root{
+  --primary-color: #778469;
+}
+
 
 *::after
 *::before
@@ -38,13 +44,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 767px;
 }
-header{
-  width: 100%;
+
+nav.menu-desktop{
+  display: none;
 }
 
 .carrito {
-  font-size: 24px;
+  font-size: 1px;
   color: #333;
   text-decoration: none;
   /* position: fixed;       */
@@ -55,19 +63,56 @@ header{
 .flex{
   display: flex; justify-content: space-around; 
 }
+
 .menu{
+  width: 100%;
+  max-width: 767px;
+  background-color: var(--primary-color);
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+}
+summary{
+  width: 24px;
+}
+.icons{
+  color: white;
+}
+.icons svg{
+  fill: white;
+}
+.icons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70px;
+}
+/* .menu{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #778469;
+  background-color: var(--primary-color);
   width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 2px black;
+  max-width: 767px;
 }
 
 .menu a{
   color: white;
   text-decoration: none;
   font-family:"tropika";
-  font-size: 2em;
+  font-size: 1em;
+} */
+.logo{
+  max-width: 70px;
+}
+
+.banner{
+  width: 100%;
 }
 
 .buttons{
@@ -93,10 +138,6 @@ button:hover{
 .container{
     max-width: 1400px;
     margin: auto;
-}
-
-.banner{
-  width: 100%;
 }
 
 .logo{
@@ -148,15 +189,16 @@ header, main{
 }
 #products-container{
   /* background-color: red; */
-  width: 60%;
+  max-width: 767px;
   display: grid;
   grid-template-columns: auto;
   gap: 20px;
 }
 .producto{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background-color: #778469;
+  background-color: var(--primary-color);
   border: 3px solid #000000;
   border-radius: 30px;
   padding: 10px;
@@ -167,4 +209,91 @@ header, main{
   margin-right: 10px;
   border: 2px solid black;
   border-radius: 25px;
+}
+.product-data{
+  max-width: 350px;
+}
+.description{
+  max-width: 767px;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que excede el ancho */
+  text-overflow: ellipsis; /* Muestra "..." al final del texto truncado */
+}
+
+.back-to-top{
+  position: fixed;
+  left:90%;
+  top:95%;
+}
+
+.lucide{
+  width: 32px;
+  height: 32px;
+}
+
+/* Tabletas pequeñas (768px - 1023px) */  
+/* iPad Mini, Tabletas Android en portrait */  
+@media (min-width: 768px) {  
+}  
+
+/* Tabletas grandes / Laptops pequeñas (1024px - 1279px) */  
+/* iPad Pro 10.5", iPad Air en landscape, Laptops 13" */  
+@media (min-width: 1024px) {  
+}  
+
+/* Laptops / Monitores estándar (1280px - 1439px) */  
+/* Laptops 15", Monitores 19"-22" (HD) */  
+@media (min-width: 1280px) {
+  body{
+    max-width: 1439px;
+  }
+
+  nav.menu-mobile{
+    display: none;
+  }
+  nav.menu-desktop{
+    display: block;
+  }
+  .menu{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 2px black;
+  max-width: 767px;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  font-family:"tropika";
+  font-size: 1em;
+}
+
+}  
+
+/* Monitores grandes (1440px - 1919px) */  
+/* Monitores Full HD (24"-27"), iMac 21.5" */  
+@media (min-width: 1440px) { 
+  body{
+    max-width: 1919px;
+  } 
+}  
+
+/* Pantallas 2K/4K y ultra-wide (1920px+) */  
+/* Monitores 4K, UltraWide (34"+), TV */  
+@media (min-width: 1920px) { 
+  body{
+    min-width: 1920px;
+  } 
+}  
+
+/* Pantallas muy grandes (2560px+) */  
+/* iMac 27", UltraWide 32:9, 4K grandes */  
+@media (min-width: 2560px) {  
+  body{
+    min-width: 2560px;
+  }
 }

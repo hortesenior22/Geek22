@@ -15,7 +15,7 @@ fetch('../json/productos.json')  // o URL de una API
          <div class="product-data">
             <h2>${producto.nombre}</h2>
             <h3>${producto.subnombre}</h3>
-            <p>${producto.descripcion}</p>
+            <p class="description">${producto.descripcion}</p>
             <p class="price">${producto.precio}</p>
          </div>
        </div>
