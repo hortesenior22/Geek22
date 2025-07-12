@@ -11,7 +11,11 @@
 
 /*Variables*/
 :root{
-  --primary-color: #778469;
+  --color-background: #EEEDF3;
+  --primary-color: #100e17;
+  /* --primary-color: #9b8784; */
+
+  --duration-default: .3s;
 }
 
 
@@ -35,7 +39,7 @@ h1, h2, h3{
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:white;
+    background-color: var(--color-background);
     margin: 03;
     /* max-width: 1200px; */
     font-size: 16px;
@@ -49,6 +53,10 @@ body{
 
 nav.menu-desktop{
   display: none;
+}
+
+summary{
+  list-style: none;
 }
 
 .carrito {
@@ -66,18 +74,17 @@ nav.menu-desktop{
 
 .menu{
   width: 100%;
-  max-width: 767px;
+  /* height: 60px; */
+  max-width: 100%;
   background-color: var(--primary-color);
   position: fixed;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   padding: 0 10px;
 }
-summary{
-  width: 24px;
-}
+
 .icons{
   color: white;
 }
@@ -108,7 +115,7 @@ summary{
   font-size: 1em;
 } */
 .logo{
-  max-width: 70px;
+  max-width: 150px;
 }
 
 .banner{
@@ -125,10 +132,10 @@ button{
     font-weight: bold;
     padding: 5px 20px;
     border-radius: 10px;
-    border: solid;
+    border: solid #000000;
     box-shadow: 1px 1px 5px ;
-    color: black;
-     background-color:rgb(197, 199, 171)
+    color: white;
+    background-color: var(--primary-color);
 }
 
 button:hover{
@@ -150,12 +157,16 @@ header, main{
   width: 80%;
 }
 
-.container-items{
+.container-item{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  /* grid-template-columns: repeat(3,1fr); */
+  justify-content: center;
+  /* max-width: 100%; */
+  /* overflow: hidden; */
 }
 
 #tarjeta{
+  /* max-width: 400px; */
   width: 400px;
 }
 
@@ -222,23 +233,51 @@ header, main{
 
 .back-to-top{
   position: fixed;
-  left:90%;
-  top:95%;
+  left:88%;
+  top:90%;
+  scroll-behavior: smooth;
+}
+a{
+  scroll-behavior: smooth;
 }
 
 .lucide{
-  width: 32px;
-  height: 32px;
+  width: 2.6rem;
+  height: 2.6rem;
+  fill: white;
+  stroke: black;
+  /* box-shadow: 0 0 10px 2px black; */
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.53));
 }
+
+.back-to-top:hover{
+  position: fixed;
+  left:88%;
+  top:90%;
+}
+@media screen and (min-width: 750px) {
+    .menu-drawer {
+        width: 40rem;
+        border-width: 0 var(--drawer-border-width) 0 0;
+        border-style: solid;
+        border-color: rgba(var(--color-foreground), var(--drawer-border-opacity));
+    }
+  }
 
 /* Tabletas pequeñas (768px - 1023px) */  
 /* iPad Mini, Tabletas Android en portrait */  
 @media (min-width: 768px) {  
+  body{
+    max-width: 1023px;
+  }
 }  
 
 /* Tabletas grandes / Laptops pequeñas (1024px - 1279px) */  
 /* iPad Pro 10.5", iPad Air en landscape, Laptops 13" */  
 @media (min-width: 1024px) {  
+  body{
+    max-width: 1279px;
+  }
 }  
 
 /* Laptops / Monitores estándar (1280px - 1439px) */  

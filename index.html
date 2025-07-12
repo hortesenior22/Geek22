@@ -7,11 +7,13 @@
     <link rel="shortcut icon" href="favicon/favicon_io/favicon-32x32.png" type="image/x-icon">
     <title>Geek22</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu-toggle.css">
+    <!-- <link rel="stylesheet" href="css/spicy.css"> -->
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <body>
-    <nav class="menu menu-desktop">
+    <header class="menu menu-desktop">
         <figure>
             <img src="img/logo 2.png" class="logo" alt="logo">
         </figure>
@@ -21,38 +23,58 @@
         <a href="/carrito.html" class="carrito">
             <i class="fas fa-shopping-cart"></i>
         </a>
-    </nav>
+    </header>
 
-    <nav class="menu menu-mobile">
-        <summary>
-           <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg> -->
-            <a href="" class="icons icon-bar">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" stroke="currentColor"><path d="M0 96C0 82.7 11.5 72 25.6 72l396.8 0c14.1 0 25.6 10.7 25.6 24s-11.5 24-25.6 24L25.6 120C11.5 120 0 109.3 0 96zM0 256c0-13.3 11.5-24 25.6-24l396.8 0c14.1 0 25.6 10.7 25.6 24s-11.5 24-25.6 24L25.6 280c-14.1 0-25.6-10.7-25.6-24zM448 416c0 13.3-11.5 24-25.6 24L25.6 440c-14.1 0-25.6-10.7-25.6-24s11.5-24 25.6-24l396.8 0c14.1 0 25.6 10.7 25.6 24z"/></svg>
-            </a>
-            
-        </summary>
+    <header class="menu menu-mobile">
+        <div class="container-menu">
+            <div id="menu-toggle" class="menu-opening">
+                <input type="checkbox" id="btn_menu">
+                <label for="btn_menu" class="btn_menu flex_column">
+                    <span id="btn_span_1" class="btn_span"></span>
+                    <span id="btn_span_2" class="btn_span"></span>
+                    <span id="btn_span_3" class="btn_span"></span>
+                </label>
+            </div>
+
+            <nav class="menu-nav">
+                <ul class="list-menu flex_column">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nuestros-productos">Nuestros Productos</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#">diseños</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+		<!-- </div> -->
         <figure>
-            <img src="img/logo 2.png" class="logo" alt="logo">
+            <img src="img/logo2_2-removebg-preview.png" class="logo" alt="logo">
         </figure>
         <div class="icons-container">
             <a class="icons lupa">
-                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
             </a>
             <a href="/carrito.html" class="icons carrito">
-               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path
+                        d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                </svg>
             </a>
         </div>
-    </nav>
-
-    <header>
-        <div class="container"></div>
-            <div class="container-item" id="banner-container">
-                <figure>
-                    <img src="img/Banner.png" class="banner" alt="banner">
-                </figure>
-            </div>
-        </div>
     </header>
+
+    <!-- <header>
+        <div class="container"></div>
+        <div class="container-item" id="banner-container">
+            <figure>
+                <img src="img/Banner.png" class="banner" alt="banner">
+            </figure>
+        </div>
+        </div>
+    </header> -->
 
     <main>
         <section id="hero">
@@ -90,7 +112,7 @@
 
             <h1 class="nuestros-productos">Nuestros Productos</h1>
             <div id="products-container"></div>
-<!--            <div class="row">
+            <!--            <div class="row">
                 <div class="col-xs-12">
                     <form>
                         <input class="search-input" type="search" name="search" placeholder="Busca el articulo">
@@ -185,14 +207,19 @@
         </section>
         <section id="compra-ya">
             <h2>Porque la moda no es lo que llevas, es cómo lo llevas</h2>
-            <a href="#inicio"><button>VOLVER AL INICIO</button></a>
+            <!-- <a href="#inicio"><button>VOLVER AL INICIO</button></a> -->
 
         </section>
     </main>
-    <div class="back-to-top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-up-icon lucide-circle-chevron-up"><circle cx="12" cy="12" r="10"/><path d="m8 14 4-4 4 4"/></svg>
-    </div>
-    
+    <a href="#hero" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-circle-chevron-up-icon lucide-circle-chevron-up">
+            <circle cx="12" cy="12" r="10" />
+            <path d="m8 14 4-4 4 4" />
+        </svg>
+    </a>
+
     <!-- <div class="contenedor-productos">
 
     </div> -->
@@ -201,6 +228,7 @@
             <p>&copy; Geek22 2023</p>
         </div>
     </footer>
+    <!-- <script src="js/menu-toggle.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 
