@@ -55,10 +55,6 @@ nav.menu-desktop{
   display: none;
 }
 
-summary{
-  list-style: none;
-}
-
 .carrito {
   font-size: 1px;
   color: #333;
@@ -72,18 +68,20 @@ summary{
   display: flex; justify-content: space-around; 
 }
 
-.menu{
+/* .menu{
   width: 100%;
-  /* height: 60px; */
+
   max-width: 100%;
   background-color: var(--primary-color);
   position: fixed;
+  padding: 0 10px;} */
+  /* height: 60px; */
   /* display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center; */
-  padding: 0 10px;
-}
+  
+
 
 .icons{
   color: white;
